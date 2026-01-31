@@ -8,63 +8,197 @@
   <meta property="og:title" content="Bakfyllans 16 grader" />
   <meta property="og:description" content="Festtestad beskrivning av bakfyllans grader" />
   <meta property="og:url" content="https://bakis.fredag.dev" />
+<style>
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  .grad-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .grad-header h2 {
+    margin: 0;
+  }
+  .share-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  .share-btn:hover {
+    opacity: 1;
+  }
+  .share-btn svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    display: block;
+  }
+</style>
 </head>
 <body>
 <div class="container">
   <h1 id="header">Bakfyllans 16 grader</h1>
     <p>Detta är den officiella 16-gradiga skalan av bakfylla, inte helt oväntat instiftad en söndag för länge sedan. Med hjälp av listan nedan kan du lätt bedömma vilken grad du befinner dig på. Listan strävar efter förbättring för att ge en sådan rättvis bild som möjligt av bakfylla och kan därför uppdateras med justeringar. Detta är version 1.1.</p>
 
-    <h2>Grad 1</h2>
+    <div class="grad-header">
+      <h2 id="grad-1">Grad 1</h2>
+      <button class="share-btn" data-grad="1" aria-label="Dela länk till Grad 1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Man är helt som vanligt. Med andra ord är man alltid minst grad 1 oavsett om man druckit eller inte, vilket också betyder att man alltid är bakfull av första grad.</p>
 
-    <h2>Grad 2</h2>
+    <div class="grad-header">
+      <h2 id="grad-2">Grad 2</h2>
+      <button class="share-btn" data-grad="2" aria-label="Dela länk till Grad 2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Man känner lite lätt av att man festade dagen innan, men inga direkta symptom.</p>
 
-    <h2>Grad 3</h2>
+    <div class="grad-header">
+      <h2 id="grad-3">Grad 3</h2>
+      <button class="share-btn" data-grad="3" aria-label="Dela länk till Grad 3">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Man är trött efter gårdagens bestyr.</p>
 
-    <h2>Grad 4</h2>
+    <div class="grad-header">
+      <h2 id="grad-4">Grad 4</h2>
+      <button class="share-btn" data-grad="4" aria-label="Dela länk till Grad 4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Man känner betydande trötthet från gårdagens festande.</p>
 
-    <h2>Grad 5</h2>
+    <div class="grad-header">
+      <h2 id="grad-5">Grad 5</h2>
+      <button class="share-btn" data-grad="5" aria-label="Dela länk till Grad 5">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Lätt illamående, men man behöver inte känna avsky mot alkoholen. Bakfylleångest kan uppstå vid den här graden. Lätt huvudvärk.</p>
 
-    <h2>Grad 6</h2>
+    <div class="grad-header">
+      <h2 id="grad-6">Grad 6</h2>
+      <button class="share-btn" data-grad="6" aria-label="Dela länk till Grad 6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Energilöshet. Tomhet. Man lever på sparkraft. Vissa lider av att man vill äta men inte kan det, eftersom man inte orkar förräns alldeles för sent. Man kan ha viss grad av bakfylleångest. Lyckas man klämma en bakispizza eller liknande finns god chans till lindring.</p>
 
-    <h2>Grad 7</h2>
+    <div class="grad-header">
+      <h2 id="grad-7">Grad 7</h2>
+      <button class="share-btn" data-grad="7" aria-label="Dela länk till Grad 7">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Normalt illamående, men kan känna sig sjuk och/eller som att man ska spy, men gör det inte. Huvudvärken tilltar.</p>
 
-    <h2>Grad 8</h2>
+    <div class="grad-header">
+      <h2 id="grad-8">Grad 8</h2>
+      <button class="share-btn" data-grad="8" aria-label="Dela länk till Grad 8">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Illamående, kräkningar förkommer vanligen på denna grad. Bakfylleångesten tilltar i intensitet. Ett inte helt ovanligt förscenario är att man vaknar fortfarande full för att sedan övergå till tidigare nämnda symptom.</p>
 
-    <h2>Grad 9</h2>
+    <div class="grad-header">
+      <h2 id="grad-9">Grad 9</h2>
+      <button class="share-btn" data-grad="9" aria-label="Dela länk till Grad 9">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Utslagen. Energidepåerna skriker efter påfyllning. Man orkar inte mycket, man spenerar dagen liggandes eller sittandes i apatisk position. Vanligt symptom är att det snurrar när man försöker resa sig första gången på morgonen/dagen/kvällen/natten efter.</p>
 
-    <h2>Grad 10 - "Olbgraden"</h2>
+    <div class="grad-header">
+      <h2 id="grad-10">Grad 10 - "Olbgraden"</h2>
+      <button class="share-btn" data-grad="10" aria-label="Dela länk till Grad 10">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>"Jag ska aldrig mer göra så jag känner så här"</p>
 
-    <h2>Grad 11</h2>
+    <div class="grad-header">
+      <h2 id="grad-11">Grad 11</h2>
+      <button class="share-btn" data-grad="11" aria-label="Dela länk till Grad 11">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Kraftigt illamående. Man ber till porslinsguden, pratar i den stora vita telefonen och försöker förgäves få i sig någon form av föda eller dryck. Allting offras heligt till porslinsguden. "Not even the teaspoons of liquid was spared." Frossa och kallsvettningar. Huvudvärk kan variera i styrka men är ofta intensiv och bultande. Svåra vinfyllor brukar resultera i detta stadie.</p>
 
-    <h2>Grad 12</h2>
+    <div class="grad-header">
+      <h2 id="grad-12">Grad 12</h2>
+      <button class="share-btn" data-grad="12" aria-label="Dela länk till Grad 12">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Styrkan av de 12 apostlarnas samlade vrede och sorg förde dig till den grad av Kristusfylla som tar dig hit ner. Bakfyllan behöver nödvändigtvis inte vara svår i intensitet, men den verkar till synes aldrig ta slut. "Först på tredje dagen är man uppstånden igen."</p>
 
-    <h2>Grad 13</h2>
+    <div class="grad-header">
+      <h2 id="grad-13">Grad 13</h2>
+      <button class="share-btn" data-grad="13" aria-label="Dela länk till Grad 13">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Riktigt kraftig huvudvärk, riktigt kraftigt illamående, riktigt kraftig frossa, riktigt kraftig ångest, riktigt kraftig bakfylla. Riktigt ihållande.</p>
 
-    <h2>Grad 14</h2>
+    <div class="grad-header">
+      <h2 id="grad-14">Grad 14</h2>
+      <button class="share-btn" data-grad="14" aria-label="Dela länk till Grad 14">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Man är orolig för sin egen hälsa. Sjukvårdsupplysningen får in samtal från den här graden då och då, från de starka själar som orkar lyfta en telefon.</p>
 
-    <h2>Grad 15</h2>
+    <div class="grad-header">
+      <h2 id="grad-15">Grad 15</h2>
+      <button class="share-btn" data-grad="15" aria-label="Dela länk till Grad 15">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>Det är nära nu, man kan se båtten, men man är inte riktigt där. Ljuset i tunnelns slut skimmrar knappt långt, långt borta.</p>
 
-    <h2>Grad 16</h2>
+    <div class="grad-header">
+      <h2 id="grad-16">Grad 16</h2>
+      <button class="share-btn" data-grad="16" aria-label="Dela länk till Grad 16">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
+      </button>
+    </div>
     <p>The båtten is nådd. Ytterst få är de som tagit sig ända ner hit och ytterst få är de som verkligen vet hur det ens är att vara här nere. Att kunna säga att man nått denna grad bör ha verifiering av tredjepart.</p>
 </div>
 <footer>
   <p>original source <a href="https://www.facebook.com/bakfyllans16grader">Bakfyllans 16 grader - Facebook page</a></p>
   <p>made by <a href="https://github.com/fredagsdeploy">Fredagsdeploy</a>
 </footer>
+<script>
+  document.querySelectorAll('.share-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const grad = btn.dataset.grad;
+      const url = `${window.location.origin}${window.location.pathname}#grad-${grad}`;
+      const title = `Bakfyllans Grad ${grad}`;
+
+      if (navigator.share) {
+        try {
+          await navigator.share({ title, url });
+        } catch (err) {
+          if (err.name !== 'AbortError') {
+            copyToClipboard(url);
+          }
+        }
+      } else {
+        copyToClipboard(url);
+      }
+    });
+  });
+
+  function copyToClipboard(url) {
+    navigator.clipboard.writeText(url);
+  }
+</script>
 </body>
 </html>
